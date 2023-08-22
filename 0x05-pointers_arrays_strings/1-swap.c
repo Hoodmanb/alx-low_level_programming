@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * reset_to_98 - swaps the value of two integers
@@ -9,6 +10,13 @@
 
 void swap_int(int *a, int *b);
 {
-	*a = *b;
-	*b = temp;
+	int a;
+	int b;
+
+	a = 98;
+	b = 42;
+	printf("%d, %d/n", a, b);
+	swap_int(&a, &b);
+	printf("%d, %d\n", a, b);
+	return (0);
 }
