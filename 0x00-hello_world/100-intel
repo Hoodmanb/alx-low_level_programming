@@ -1,0 +1,3 @@
+#!/bin/bash
+read -p "Enter the C file name: " CFILE && BASENAME=$(basename --
+"$CFILE") && FILENAME="${BASENAME%.*}" && gcc -S -masm=intel "$CFILE" -o "$FILENAME.s"
