@@ -4,16 +4,15 @@
 
 /**
  * main - entry point
- * Description: this program generates a random number and prints wether the number is positive, zero or 
- *              negative
+ * Description: this program generates a random number and pe
  * Return: 0
  */
 int main(void)
 {
 	int n;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
 
 	printf("%d ", n);
 
@@ -29,6 +28,6 @@ int main(void)
 	{
 		printf("is negative\n");
 	}
-	
+
 	return (0);
 }
