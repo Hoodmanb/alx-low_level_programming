@@ -23,9 +23,9 @@ int main(void)
 	if (i > 9)
 
 		break;
+	}
 
 	putchar('\n');
-	}
 
 	return (0);
 
